@@ -10,6 +10,5 @@ public class AquariumRunner {
         ApplicationContext ac = new AnnotationConfigApplicationContext(SpringConfiguration.class);
         Aquarium aquarium = ac.getBean(Aquarium.class);
         System.out.println(aquarium);
-
     }
 }
