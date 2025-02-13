@@ -1,0 +1,25 @@
+package com.xworkz.uidaiapp.entity;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+import javax.persistence.*;
+
+@Getter
+@Setter
+@Entity
+@ToString
+@Table(name = "uidai_details")
+public class AadhaarAuthEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "uidai_id")
+    private Integer uidaiId;
+    @Column(name = "aadhaar_number")
+    private Long aadhaarNumber;
+    private String name;
+    private String dob;
+    private String address;
+
+}
